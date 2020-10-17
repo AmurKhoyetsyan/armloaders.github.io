@@ -1,0 +1,60 @@
+$turquoiseDark: #11998e
+$turquoiseLight: #20bb87
+$darkBlue: #2d3340
+$blue: #0765AD
+$lightBlue: #5D88BF
+$green: #77BA37
+$lightBlue2: #199199
+$orange: #EB5A33
+$gray: #6c757d
+
+@mixin linear-gradient($deg, $colorOne, $colorTwo)
+    background-image: -webkit-linear-gradient($deg, $colorOne, $colorTwo)
+    background-image: -moz-linear-gradient($deg, $colorOne, $colorTwo)
+    background-image: -ms-linear-gradient($deg, $colorOne, $colorTwo)
+    background-image: -o-linear-gradient($deg, $colorOne, $colorTwo)
+    background-image: linear-gradient($deg, $colorOne, $colorTwo)
+
+@mixin transition($props)
+    -webkit-transition: $props
+    -moz-transition: $props
+    -ms-transition: $props
+    -o-transition: $props
+    transition: $props
+
+.text-gray,
+.text-gray *
+    color: $gray
+
+.my-header
+    top: 0
+    left: 0
+    z-index: 1
+    @include transition(background-color 200ms linear)
+    .navbar
+        padding: 10px
+        background-color: transparent !important
+        @media screen and (max-width: 767px)
+            .navbar-collapse
+                background-color: #FFFFFF
+                padding-left: 10px
+                padding-right: 10px
+                margin: 10px -10px 0 -10px
+                border: none
+                z-index: 1
+
+.main
+    .gradient-turquoise
+        @include linear-gradient(315deg, $turquoiseLight 0%, $turquoiseDark 100%)
+    .dark-blue
+        background-color: $darkBlue
+    .blue
+        background-color: $blue
+    .light-blue
+        background-color: $lightBlue
+    .green
+        background-color: $green
+    .light-blue-2
+        background-color: $lightBlue2
+    .orange
+        background-color: $orange

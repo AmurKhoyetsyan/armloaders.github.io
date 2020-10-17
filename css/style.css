@@ -1,0 +1,57 @@
+.text-gray,
+.text-gray * {
+  color: #6c757d;
+}
+
+.my-header {
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+}
+
+.my-header .navbar {
+  padding: 10px;
+  background-color: transparent !important;
+}
+
+@media screen and (max-width: 767px) {
+  .my-header .navbar .navbar-collapse {
+    background-color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px -10px 0 -10px;
+    border: none;
+    z-index: 1;
+  }
+}
+
+.main .gradient-turquoise {
+  background-image: linear-gradient(315deg, #20bb87 0%, #11998e 100%);
+}
+
+.main .dark-blue {
+  background-color: #2d3340;
+}
+
+.main .blue {
+  background-color: #0765AD;
+}
+
+.main .light-blue {
+  background-color: #5D88BF;
+}
+
+.main .green {
+  background-color: #77BA37;
+}
+
+.main .light-blue-2 {
+  background-color: #199199;
+}
+
+.main .orange {
+  background-color: #EB5A33;
+}
+/*# sourceMappingURL=style.css.map */
