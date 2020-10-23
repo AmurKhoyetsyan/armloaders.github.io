@@ -74,10 +74,9 @@
           user-select: none;
 }
 
-.parent-earth {
-  width: 300px;
-  height: 300px;
-  background-color: #676D89;
+.parent {
+  width: 320px;
+  height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +92,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.parent-earth {
+  background-color: #676D89;
 }
 
 .parent-earth .loader-earth {
@@ -529,24 +532,7 @@
 }
 
 .parent-loader-8 {
-  width: 100vw;
-  height: 100vh;
   background-color: #18212A;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .parent-loader-8 .loader-loader-8 {
@@ -593,6 +579,63 @@
   from {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
             transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.parent-loader-5 {
+  background-color: #B12C2C;
+}
+
+.parent-loader-5 .loader-loader-5 {
+  width: 100px;
+}
+
+.parent-loader-5 .loader-loader-5 .loader-items-loader-5 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.parent-loader-5 .loader-loader-5 .loader-items-loader-5 .item-loader-5 {
+  -webkit-transform: rotate(calc(var(--i) * 30deg));
+          transform: rotate(calc(var(--i) * 30deg));
+  -webkit-animation: loader-loader-5 1.2s linear infinite;
+          animation: loader-loader-5 1.2s linear infinite;
+  -webkit-animation-delay: calc(var(--i) * 100ms);
+          animation-delay: calc(var(--i) * 100ms);
+  -webkit-transform-origin: 50px 50px;
+          transform-origin: 50px 50px;
+}
+
+.parent-loader-5 .loader-loader-5 .loader-items-loader-5 .item-loader-5::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 47px;
+  width: 7px;
+  height: 21px;
+  background-color: #FFFFFF;
+  border-radius: 20%;
+  -webkit-box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes loader-loader-5 {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
+  }
+}
+
+@keyframes loader-loader-5 {
+  to {
+    opacity: 0;
+  }
+  from {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -74,15 +74,17 @@ $gray: #6c757d
     color: #FFFFFF
     user-select: none
 
-.parent-earth
-    width: 300px
-    height: 300px
-    background-color: #676D89
+.parent
+    width: 320px
+    height: 320px
     display: flex
     flex-direction: row
     flex-wrap: nowrap
     justify-content: center
     align-items: center
+
+.parent-earth
+    background-color: #676D89
     .loader-earth
         width: 120px
         .loader-items-earth
@@ -351,14 +353,7 @@ $gray: #6c757d
         transform: scale(.5) translate3d(165px, -3px, 0) rotateZ(60deg)
 
 .parent-loader-8
-    width: 100vw
-    height: 100vh
     background-color: #18212A
-    display: flex
-    flex-wrap: nowrap
-    flex-direction: row
-    justify-content: center
-    align-items: center
     .loader-loader-8
         width: 100px
         .loader-parent-loader-8
@@ -382,3 +377,34 @@ $gray: #6c757d
         transform: translate(-50%, -50%) rotate(360deg)
     from
         transform: translate(-50%, -50%) rotate(0deg)
+
+.parent-loader-5
+    background-color: #B12C2C
+    .loader-loader-5
+        width: 100px
+        .loader-items-loader-5
+            width: 100%
+            height: 100px
+            position: relative
+            .item-loader-5
+                transform: rotate(calc(var(--i) * 30deg))
+                animation: loader-loader-5 1.2s linear infinite
+                animation-delay: calc(var(--i) * 100ms)
+                transform-origin: 50px 50px
+                &::after
+                    content: ""
+                    display: block
+                    position: absolute
+                    top: 3px
+                    left: 47px
+                    width: 7px
+                    height: 21px
+                    background-color: #FFFFFF
+                    border-radius: 20%
+                    box-shadow: -1px 1px 2px 1px rgba(0,0,0, 0.2)
+
+@keyframes loader-loader-5
+    to
+        opacity: 0
+    from
+        opacity: 1
