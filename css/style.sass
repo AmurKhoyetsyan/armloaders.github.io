@@ -522,3 +522,45 @@ $gray: #6c757d
         transform: translate(-50%, -50%) rotateZ(0deg)
     from
         transform: translate(-50%, -50%) rotateZ(180deg)
+
+.parent-loader-10
+    background-color: #202C39
+    .loader-loader-10
+        width: 100px
+        .loader-items-loader-10
+            width: 100%
+            height: 100px
+            position: relative
+            transform-style: preserve-3d
+            perspective: 100px
+            .circle-loader-10
+                position: absolute
+                border: 1px solid #FFFFFF
+                width: calc(var(--i) * 10px)
+                height: calc(var(--i) * 10px)
+                top: 50%
+                left: 50%
+                border-radius: 50%
+                transform: translate3d(-50%, -50%, -70px) rotateX(65deg)
+                animation: loader-loader-10 1200ms linear infinite
+                animation-delay: calc(var(--i) * 100ms)
+            .cub-loader-10
+                position: absolute
+                border: 1px solid #FFFFFF
+                width: calc(var(--i) * 10px)
+                height: calc(var(--i) * 10px)
+                top: 50%
+                left: 50%
+                transform: translate3d(-50%, -50%, -70px) rotateX(65deg)
+                animation: loader-loader-10 1200ms linear infinite
+                animation-delay: calc(var(--i) * 100ms)
+
+@keyframes loader-loader-10
+    from
+        transform: translate3d(-50%, -50%, -70px) rotateX(65deg)
+    33.3%
+        transform: translate3d(-50%, -90%, -70px) rotateX(65deg)
+    66.6%
+        transform: translate3d(-50%, -20%, -70px) rotateX(65deg)
+    to
+        transform: translate3d(-50%, -50%, -70px) rotateX(65deg)
