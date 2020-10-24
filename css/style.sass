@@ -475,3 +475,50 @@ $gray: #6c757d
         width: 80px
         height: 80px
         opacity: 0
+
+.parent-loader-4
+    background-color: #202c39
+    .loader-loader-4
+        width: 100px
+        .loader-items-loader-4
+            width: 100%
+            height: 100px
+            perspective: 100px
+            .parent-cub-loader-4
+                width: 100px
+                height: 100px
+                position: relative
+                transform-style: preserve-3d
+                transform-origin: 50% 50% -50px
+                .cub-loader-4
+                    width: 50px
+                    height: 50px
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    position: absolute
+                    background-color: #FFFFFF
+                    &.cub-loader-4.cub-1-loader-4
+                        animation: loader-1-loader-4 500ms ease infinite
+                    &.cub-loader-4.cub-2-loader-4
+                        animation: loader-2-loader-4 500ms ease infinite
+                    &.cub-loader-4.cub-3-loader-4
+                        animation: loader-3-loader-4 500ms ease infinite
+                        
+@keyframes loader-1-loader-4
+    to
+        transform: translate(-50%, -50%) rotateX(0deg)
+    from
+        transform: translate(-50%, -50%) rotateX(180deg)
+
+@keyframes loader-2-loader-4
+    to
+        transform: translate(-50%, -50%) rotateY(0deg)
+    from
+        transform: translate(-50%, -50%) rotateY(180deg)
+
+@keyframes loader-3-loader-4
+    to 
+        transform: translate(-50%, -50%) rotateZ(0deg)
+    from
+        transform: translate(-50%, -50%) rotateZ(180deg)
