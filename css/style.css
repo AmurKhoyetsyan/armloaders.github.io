@@ -1096,4 +1096,101 @@
             transform: scale(1, 1);
   }
 }
+
+.parent-heart {
+  background-color: #B12C2C;
+}
+
+.parent-heart .loader-heart {
+  width: 100px;
+}
+
+.parent-heart .loader-heart .loader-items-heart {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.parent-heart .loader-heart .loader-items-heart .heart {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-85%, -75%);
+          transform: translate(-85%, -75%);
+  background-color: #FFFFFF;
+  -webkit-animation: loader-heart 1000ms linear infinite;
+          animation: loader-heart 1000ms linear infinite;
+}
+
+.parent-heart .loader-heart .loader-items-heart .heart::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: 0;
+  background-color: #FFFFFF;
+}
+
+.parent-heart .loader-heart .loader-items-heart .heart::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  background-color: #FFFFFF;
+}
+
+@-webkit-keyframes loader-heart {
+  to {
+    -webkit-transform: translate(-60%, -60%) scale(0.5);
+            transform: translate(-60%, -60%) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translate(-80%, -70%) scale(0.8);
+            transform: translate(-80%, -70%) scale(0.8);
+  }
+  60% {
+    -webkit-transform: translate(-60%, -60%) scale(0.5);
+            transform: translate(-60%, -60%) scale(0.5);
+  }
+  80% {
+    -webkit-transform: translate(-80%, -70%) scale(0.8);
+            transform: translate(-80%, -70%) scale(0.8);
+  }
+  from {
+    -webkit-transform: translate(-85%, -75%) scale(1);
+            transform: translate(-85%, -75%) scale(1);
+  }
+}
+
+@keyframes loader-heart {
+  to {
+    -webkit-transform: translate(-60%, -60%) scale(0.5);
+            transform: translate(-60%, -60%) scale(0.5);
+  }
+  30% {
+    -webkit-transform: translate(-80%, -70%) scale(0.8);
+            transform: translate(-80%, -70%) scale(0.8);
+  }
+  60% {
+    -webkit-transform: translate(-60%, -60%) scale(0.5);
+            transform: translate(-60%, -60%) scale(0.5);
+  }
+  80% {
+    -webkit-transform: translate(-80%, -70%) scale(0.8);
+            transform: translate(-80%, -70%) scale(0.8);
+  }
+  from {
+    -webkit-transform: translate(-85%, -75%) scale(1);
+            transform: translate(-85%, -75%) scale(1);
+  }
+}
 /*# sourceMappingURL=style.css.map */
