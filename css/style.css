@@ -1398,4 +1398,111 @@
     left: 10px;
   }
 }
+
+.parent-potion {
+  background-color: #18212A;
+}
+
+.parent-potion .loader-potion {
+  width: 100px;
+}
+
+.parent-potion .loader-potion .loader-items-potion {
+  width: 100%;
+  height: 185px;
+  position: relative;
+}
+
+.parent-potion .loader-potion .loader-items-potion .cap {
+  width: 50px;
+  height: 30px;
+  background-color: #B9661C;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.parent-potion .loader-potion .loader-items-potion .cap::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: #9A501D;
+  left: 50%;
+  position: absolute;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass {
+  width: 50px;
+  height: 150px;
+  background-color: #B5F0E8;
+  opacity: .7;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass .glass-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass .glass-content .fill {
+  position: absolute;
+  bottom: 5px;
+  background-color: #DA0000;
+  width: calc(100% - 8px);
+  left: 4px;
+  height: calc(100% - 10px);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  -webkit-animation: loader-potion 1500ms linear infinite;
+          animation: loader-potion 1500ms linear infinite;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass .glass-content .fill .fill-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass .glass-content .fill .fill-content .bubble-potion {
+  position: absolute;
+  width: 40%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: #BF0303;
+  top: calc(calc(var(--i) * 19%) + 5px);
+  left: 2px;
+}
+
+.parent-potion .loader-potion .loader-items-potion .glass .glass-content .fill .fill-content .bubble-potion:nth-child(2), .parent-potion .loader-potion .loader-items-potion .glass .glass-content .fill .fill-content .bubble-potion:nth-child(4) {
+  left: calc(100% - 10px);
+}
+
+@-webkit-keyframes loader-potion {
+  to {
+    height: calc(100% - 10px);
+  }
+  from {
+    height: 5%;
+  }
+}
+
+@keyframes loader-potion {
+  to {
+    height: calc(100% - 10px);
+  }
+  from {
+    height: 5%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
