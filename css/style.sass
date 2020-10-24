@@ -591,3 +591,30 @@ $gray: #6c757d
         transform: translateY(-30px)
     from
         transform: translateY(0)
+
+.parent-loader-1
+    background-color: #e06363
+    .loader-loader-1
+        width: 150px
+        height: 40px
+        .loader-items-loader-1
+            width: 100%
+            display: flex
+            flex-wrap: nowrap
+            justify-content: space-between
+            align-items: center
+            .bubble-loader-1
+                width: 30px
+                height: 30px
+                background-color: #FFFFFF
+                border-radius: 100%
+                animation: bubble1-loader-1 1200ms ease-in-out infinite
+                animation-delay: calc(var(--i) * 350ms)
+
+@keyframes bubble1-loader-1
+    to
+        transform: scale(1,1)
+    50%
+        transform: scale(0.3,0.3)
+    from
+        transform: scale(1,1)
