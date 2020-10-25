@@ -1920,4 +1920,30 @@
   background-size: cover;
   background-blend-mode: screen;
 }
+
+.parent-img-2 {
+  background-color: #000000;
+}
+
+.parent-img-2 .content {
+  width: 475px;
+  height: 620px;
+  background-image: url("../img/3.jpg");
+  background-size: cover;
+  font-size: 12px;
+  line-break: anywhere;
+  overflow: hidden;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+@media screen and (max-width: 991px) {
+  .parent-img-2 .content {
+    width: 237.5px;
+    height: 310px;
+    font-size: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

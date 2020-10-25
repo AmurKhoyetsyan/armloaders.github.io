@@ -1065,3 +1065,21 @@ $gray: #6c757d
         background-image: url("../img/1.jpg"), url("../img/2.jpg")
         background-size: cover
         background-blend-mode: screen
+
+.parent-img-2
+    background-color: #000000
+    .content
+        width: 475px
+        height: 620px
+        background-image: url("../img/3.jpg")
+        background-size: cover
+        font-size: 12px
+        line-break: anywhere
+        overflow: hidden
+        -webkit-background-clip: text
+        -webkit-text-fill-color: rgba(0,0,0,0)
+        filter: grayscale(1)
+        @media screen and (max-width: 991px)
+            width: 237.5px
+            height: 310px
+            font-size: 10px
