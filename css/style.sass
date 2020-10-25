@@ -834,3 +834,194 @@ $gray: #6c757d
         height: calc(100% - 10px)
     from
         height: 5%
+
+.parent-animation-1
+    background-color: #282E3A
+    .animation-animation-1
+        width: 260px
+        .animation-items-animation-1
+            width: 100%
+            height: 260px
+            position: relative
+            .camera-animation-1
+                width: 80%
+                height: 80%
+                position: absolute
+                top: 50%
+                left: 50%
+                animation: animationCamera-animation-1 2000ms linear infinite
+                .camera-content-animation-1
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    .camera-header-animation-1
+                        width: 100%
+                        height: 50%
+                        background-color: #FFFFFF
+                        border-top-left-radius: 15% 30%
+                        border-top-right-radius: 15% 30%
+                        &::before
+                            content: ""
+                            width: 10%
+                            height: 10%
+                            background-color: #E67E22
+                            position: absolute
+                            top: 10%
+                            left: 10%
+                            border-radius: 50%
+                            animation: animationGlass-animation-1 2000ms linear infinite
+                        &::after
+                            content: ""
+                            width: 25%
+                            height: 10%
+                            background-color: #68B5F1
+                            position: absolute
+                            top: 10%
+                            right: 10%
+                            border-radius: 25%/50%
+                            animation: animationGlass-animation-1 2000ms linear infinite
+                    .camera-footer-animation-1
+                        width: 100%
+                        height: 50%
+                        background-color: #E67E22
+                        border-top: 15px solid #DD660E
+                        border-bottom-left-radius: 15% 30%
+                        border-bottom-right-radius: 15% 30%
+                        box-shadow: inset 0 -20px 0 0 #DB640E
+                        &::before
+                            content: ""
+                            position: absolute
+                            background-color: #282E3A
+                            width: 50%
+                            height: 10%
+                            left: 25%
+                            top: 60%
+                            animation: animationGlass-animation-1 2000ms linear infinite
+                        &::after
+                            content: ""
+                            position: absolute
+                            background-color: #FFFFFF
+                            width: 40%
+                            left: 30%
+                            top: 60%
+                            box-shadow: 0 10px 0 0 #DB640E, inset 0 10px 0 0 #C3D1DD
+                            animation: animationPaper-animation-1 2000ms linear infinite
+                    .glass-animation-1
+                        width: 10%
+                        height: 10%
+                        position: absolute
+                        top: 30%
+                        left: 45%
+                        border-radius: 50%/50%
+                        transform: translateX(-50%)
+                        background-color: #243E6E
+                        padding: 5px
+                        box-shadow: 0 0 0 18px #3E5489, 0 0 0 23px #1C3666, 0 0 0 30px #ECF0F1, 0 7px 0 30px rgba(0, 0, 0, 0.2)
+                        animation: animationGlass-animation-1 2000ms linear infinite
+                        &::before
+                            content: ""
+                            width: 90%
+                            height: 90%
+                            position: absolute
+                            top: -60%
+                            left: -60%
+                            border-radius: 50%/50%
+                            background-color: #A3BFD5
+                        &::after
+                            content: ""
+                            width: 70%
+                            height: 70%
+                            position: absolute
+                            top: 80%
+                            left: 80%
+                            border-radius: 50%/50%
+                            background-color: #6078A3
+
+@keyframes animationGlass-animation-1
+    from
+        opacity: 0
+        transform: scale(0.1)
+    20%
+        opacity: 0
+        transform: scale(0.1)
+    25%
+        opacity: 1
+        transform: scale(1.4)
+    30%
+        opacity: 1
+        transform: scale(1)
+    95%
+        opacity: 1
+        transform: scale(1)
+    to
+        opacity: 0
+        transform: scale(0.1)
+
+@keyframes animationPaper-animation-1
+    from
+        opacity: 0
+        height: 0
+    25%
+        opacity: 0
+        height: 0
+    30%
+        opacity: 1
+        height: 22%
+    95%
+        opacity: 1
+        height: 22%
+    to
+        opacity: 0
+        height: 0
+
+@keyframes animationCamera-animation-1
+    from
+        transform: translate(-50%, -50%) scale(.2) rotate(75deg)
+    15%
+        transform: translate(-50%, -50%) scale(1.2) rotate(-75deg)
+    20%
+        transform: translate(-50%, -50%) scale(1) rotate(0)
+    90%
+        transform: translate(-50%, -50%) scale(1) rotate(0)
+    to
+        transform: translate(-50%, -50%) scale(.2) rotate(75deg)
+
+.parent-checkbox-1
+    background-color: #333333
+    .check-input
+        display: none
+    .check-label
+        width: 70px
+        height: 26px
+        border: 1px solid #ECECEC
+        border-radius: 15px
+        position: relative
+        cursor: pointer
+        &::after
+            content: "Off"
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 10px
+            font-weight: 700
+            color: #FFFFFF
+            font-size: 16px
+            line-height: 1.7
+            z-index: 1
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            background-color: #00FF00
+            border-radius: 100%
+            position: absolute
+            left: 0
+            border: 2px solid #ECECEC
+            z-index: 2
+            transition: left 300ms ease-in-out
+    .check-input:checked + .check-label::after
+        content: "On"
+        left: 10px
+        right: auto
+    .check-input:checked + .check-label::before
+        left: calc(100% - 24px)
