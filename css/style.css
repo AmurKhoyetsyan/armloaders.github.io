@@ -1908,4 +1908,16 @@
 .parent-stars-1 .content .content-footer .star:hover ~ .star {
   background-color: #FFFF00;
 }
+
+.parent-img-1 {
+  background-color: #FFFFFF;
+}
+
+.parent-img-1 .content {
+  width: 360px;
+  height: 500px;
+  background-image: url("../img/1.jpg"), url("../img/2.jpg");
+  background-size: cover;
+  background-blend-mode: screen;
+}
 /*# sourceMappingURL=style.css.map */
