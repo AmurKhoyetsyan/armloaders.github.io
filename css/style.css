@@ -1813,7 +1813,7 @@
 
 .parent-checkbox-1 .check-label {
   width: 70px;
-  height: 30px;
+  height: 26px;
   border: 1px solid #ECECEC;
   border-radius: 15px;
   position: relative;
@@ -1855,6 +1855,6 @@
 }
 
 .parent-checkbox-1 .check-input:checked + .check-label::before {
-  left: calc(100% - 26px);
+  left: calc(100% - 24px);
 }
 /*# sourceMappingURL=style.css.map */
