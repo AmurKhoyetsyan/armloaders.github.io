@@ -29,7 +29,8 @@ $gray: #6c757d
 .my-header
     top: 0
     left: 0
-    z-index: 1
+    z-index: 3
+    background-color: #99999950
     @include transition(background-color 200ms linear)
     .navbar
         padding: 10px
@@ -1025,3 +1026,33 @@ $gray: #6c757d
         right: auto
     .check-input:checked + .check-label::before
         left: calc(100% - 24px)
+
+.parent-stars-1
+    background-color: #888888
+    padding: 10px
+    .content
+        width: 500px
+        .content-body
+            font-size: 14px
+            width: 100%
+            padding: .5rem
+            border-radius: .5rem
+            background-color: #FFEEEE
+        .content-footer
+            width: 100%
+            padding: .5rem
+            border-radius: .5rem
+            background-color: #004E4E
+            display: flex
+            flex-wrap: nowrap
+            flex-direction: row-reverse
+            justify-content: start
+            .star
+                width: 20px
+                height: 20px
+                cursor: pointer
+                background-color: #BDBDBD
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+                &:hover,
+                &:hover ~ .star
+                    background-color: #FFFF00

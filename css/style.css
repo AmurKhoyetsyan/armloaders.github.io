@@ -6,7 +6,8 @@
 .my-header {
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
+  background-color: #99999950;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
@@ -1856,5 +1857,55 @@
 
 .parent-checkbox-1 .check-input:checked + .check-label::before {
   left: calc(100% - 24px);
+}
+
+.parent-stars-1 {
+  background-color: #888888;
+  padding: 10px;
+}
+
+.parent-stars-1 .content {
+  width: 500px;
+}
+
+.parent-stars-1 .content .content-body {
+  font-size: 14px;
+  width: 100%;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #FFEEEE;
+}
+
+.parent-stars-1 .content .content-footer {
+  width: 100%;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: #004E4E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.parent-stars-1 .content .content-footer .star {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #BDBDBD;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.parent-stars-1 .content .content-footer .star:hover,
+.parent-stars-1 .content .content-footer .star:hover ~ .star {
+  background-color: #FFFF00;
 }
 /*# sourceMappingURL=style.css.map */
