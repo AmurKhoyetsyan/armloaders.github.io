@@ -203,7 +203,7 @@
   }
 }
 
-@-webkit-keyframes animationPaper {
+@-webkit-keyframes animationPaper-animation-1 {
   from {
     opacity: 0;
     height: 0;
@@ -226,7 +226,7 @@
   }
 }
 
-@keyframes animationPaper {
+@keyframes animationPaper-animation-1 {
   from {
     opacity: 0;
     height: 0;
