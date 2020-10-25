@@ -53,6 +53,10 @@
 
 ;(function(glob){
     function init(selector){
+        if(selector === null){
+            return false;
+        }
+        
         let clock = glob.createElement('div');
         clock.classList.add('clock');
         
