@@ -173,6 +173,10 @@
     let move = fox.querySelector(".parent-fox");
     let animation = fox.querySelector(".animation");
 
+    if(move === null || animation === null) {
+        return false;
+    }
+
     let cords = {
         startX: 0,
         startY: 0,
@@ -208,3 +212,19 @@
     move.addEventListener("mouseup", mouseUp);
     move.addEventListener("mousedown", mouseDown);
 })(document);
+
+;(function() {
+    DAD.dragedUpload({
+        element: document.querySelector(".file-upload"),
+        // input: document.querySelector(".input-image"),
+        start: () => console.log("Start"),
+        end: (res, err) => {
+            if(err === null){
+                document.querySelector(".file-upload").setAttribute("data-content", res.files[0].file.name);
+                console.log("Res ::: ", res);
+            }else {
+                console.log("Error ::: ", err);
+            }
+        }
+    });
+});

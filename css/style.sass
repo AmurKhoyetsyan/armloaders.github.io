@@ -1624,3 +1624,22 @@ $black: #160F05
                         width: 20px
                         height: 22px
                         transform: translate3d(-1px, -3px, -13px) rotateZ(90deg)
+
+.parent-file-upload
+    background-color: #FFFFFF
+    .file-upload
+        width: 500px
+        height: 280px
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        border: 2px dashed #909090
+        background-color: #E7E7E7
+        &.dragover
+            background-color: #BABABA
+        &::before
+            content: attr(data-content)
+            color: #333333
+            font-size: 32px
