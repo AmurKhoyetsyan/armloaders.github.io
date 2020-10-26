@@ -2084,4 +2084,12 @@
   position: absolute;
   border-radius: 50%;
 }
+
+.parent-progress {
+  background-color: #333333;
+}
+
+.parent-progress .circle-progress {
+  width: 200px;
+}
 /*# sourceMappingURL=style.css.map */
