@@ -1712,3 +1712,34 @@ $black: #160F05
             &:active,
             &:focus
                 outline: none
+
+.parent-ekvalayzer-loader
+    background-color: #202c39
+    .ekvalayzer-loader
+        width: 150px
+        .ekvalayzer-loader-items
+            width: 100%
+            height: 100px
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            flex-direction: row
+            flex-wrap: nowrap
+            .ekvalayzer-parent-rectangular
+                padding: 3px
+                width: min-content
+                height: min-content
+                .ekvalayzer-rectangular
+                    width: 10px
+                    background-color: #FFFFFF
+                    box-shadow: 0 0 10px 2px #FFFFFF
+                    animation: ekvalayzer 500ms ease-in-out infinite
+                    animation-delay: calc(var(--i) * 100ms)
+
+@keyframes ekvalayzer
+    from
+        height: calc(var(--w) * 20px)
+    50%
+        height: 80px
+    to
+        height: calc(var(--w) * 20px)
