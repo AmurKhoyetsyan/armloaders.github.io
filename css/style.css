@@ -3044,4 +3044,107 @@
     height: calc(var(--w) * 20px);
   }
 }
+
+.parent-loader-11 {
+  background-color: #202c39;
+}
+
+.parent-loader-11 .loader-loader-11 {
+  width: 100px;
+}
+
+.parent-loader-11 .loader-loader-11 .loader-items-loader-11 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.parent-loader-11 .loader-loader-11 .loader-items-loader-11 .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 70px;
+  -webkit-animation: loader-loader-11 1.5s ease-in infinite;
+          animation: loader-loader-11 1.5s ease-in infinite;
+}
+
+.parent-loader-11 .loader-loader-11 .loader-items-loader-11 .item .circle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+
+@-webkit-keyframes loader-loader-11 {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  45% {
+    -webkit-transform: rotate(400deg);
+            transform: rotate(400deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  95% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes loader-loader-11 {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  45% {
+    -webkit-transform: rotate(400deg);
+            transform: rotate(400deg);
+  }
+  50% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  95% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
 /*# sourceMappingURL=style.css.map */

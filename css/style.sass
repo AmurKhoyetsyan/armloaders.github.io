@@ -1743,3 +1743,42 @@ $black: #160F05
         height: 80px
     to
         height: calc(var(--w) * 20px)
+
+.parent-loader-11
+    background-color: #202c39
+    .loader-loader-11
+        width: 100px
+        .loader-items-loader-11
+            width: 100%
+            height: 100px
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: row
+            flex-wrap: nowrap
+            .item
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-direction: row
+                flex-wrap: nowrap
+                width: 70px
+                animation: loader-loader-11 1.5s ease-in infinite
+                .circle
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                    background-color: #FFFFFF
+
+@keyframes loader-loader-11
+    from
+        transform: rotate(0)
+    45%
+        transform: rotate(400deg)
+    50%
+        transform: rotate(360deg)
+    95%
+        transform: rotate(-40deg)
+    to 
+        transform: rotate(0)
