@@ -259,7 +259,7 @@
     }
 
     function run() {
-        let light = doc.querySelectorAll('.circle');
+        let light = doc.querySelectorAll('.traffic-light .circle');
         if(light !== null) {
             let lightColor = ["red", "yellow", "green"];
             runInterval(light, lightColor);
@@ -267,7 +267,7 @@
     }
 
     function start() {
-        let btn = doc.querySelector('.btn-run');
+        let btn = doc.querySelector('.parent-traffic-light .btn-run');
         if(btn !== null) {
             btn.onclick = function(event) {
                 runLight = !runLight;
