@@ -214,7 +214,7 @@
 })(document);
 
 ;(function() {
-    DAD.dragedUpload({
+    DAD.draggedUpload({
         element: document.querySelector(".file-upload"),
         // input: document.querySelector(".input-image"),
         start: () => console.log("Start"),
