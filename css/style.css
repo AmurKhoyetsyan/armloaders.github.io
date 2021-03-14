@@ -6,7 +6,7 @@
 .my-header {
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 9999;
   background-color: #99999950;
   -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
@@ -54,6 +54,10 @@
 
 .main .orange {
   background-color: #EB5A33;
+}
+
+.main .bg-pink {
+  background-color: #EC7474;
 }
 
 .show-code {
@@ -3515,5 +3519,152 @@
     top: calc(100% + 15px);
     left: calc(var(--left) * 20px);
   }
+}
+
+.parent-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #0b467b;
+}
+
+.parent-switch .toogle-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.parent-switch .toogle-parent .type {
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 1.7;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  -webkit-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+}
+
+.parent-switch .toogle-parent .type.pm {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.parent-switch .toogle-parent .toogle-input {
+  display: none;
+}
+
+.parent-switch .toogle-parent .toogle {
+  width: 110px;
+  height: 50px;
+  background-color: #1EAAF1;
+  display: block;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: background-color 200ms ease-in;
+  transition: background-color 200ms ease-in;
+}
+
+.parent-switch .toogle-parent .toogle .moon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F6E4B2;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: left 200ms ease-in;
+  transition: left 200ms ease-in;
+}
+
+.parent-switch .toogle-parent .toogle .moon .hole {
+  opacity: 0;
+  top: calc(var(--top) * 10px);
+  left: calc(var(--left) * 10px);
+  width: calc(var(--size) * 2px);
+  height: calc(var(--size) * 2px);
+  border-radius: 50%;
+  background-color: #D8C188;
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5), inset 16px 0 2px -14px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5), inset 16px 0 2px -14px rgba(0, 0, 0, 0.15);
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  position: absolute;
+}
+
+.parent-switch .toogle-parent .toogle .star {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: calc(var(--top) * 10px);
+  left: calc(var(--left) * 10px);
+  width: calc(var(--size) * 2px);
+  height: calc(var(--size) * 2px);
+  border-radius: calc(var(--size) * 1.5px);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.parent-switch .toogle-parent .toogle .star.cloud {
+  left: calc(calc(var(--left) * 1.5) * 10px);
+  width: calc(var(--resize) * 5px);
+  -webkit-transition: width 200ms ease-in;
+  transition: width 200ms ease-in;
+  z-index: 1;
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .toogle {
+  background-color: #739DD6;
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .toogle .moon {
+  left: 65px;
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .toogle .moon .hole {
+  opacity: 1;
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .toogle .star.cloud {
+  left: calc(var(--left) * 10px);
+  width: calc(var(--size) * 2px);
+  height: calc(var(--size) * 2px);
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .type.am {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.parent-switch .toogle-parent .toogle-input:checked ~ .type.pm {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
