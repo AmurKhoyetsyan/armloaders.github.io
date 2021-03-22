@@ -3667,4 +3667,9 @@
 .parent-switch .toogle-parent .toogle-input:checked ~ .type.pm {
   color: #FFFFFF;
 }
+
+.matrix-canvas-1 {
+  width: 550px;
+  height: 300px;
+}
 /*# sourceMappingURL=style.css.map */
