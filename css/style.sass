@@ -386,13 +386,14 @@ $pink: #EC7474
     .loader-loader-5
         width: 100px
         .loader-items-loader-5
+            transform: rotateY(180deg)
             width: 100%
             height: 100px
             position: relative
             .item-loader-5
                 transform: rotate(calc(var(--i) * 30deg))
                 animation: loader-loader-5 1.2s linear infinite
-                animation-delay: calc(var(--i) * 100ms)
+                animation-delay: calc(var(--i) * -100ms)
                 transform-origin: 50px 50px
                 &::after
                     content: ""
@@ -467,7 +468,7 @@ $pink: #EC7474
                 border-radius: 50%
                 transform: translate(-50%, -50%)
                 animation: loader-loader-9 1200ms linear infinite
-                animation-delay: calc(var(--i) * 400ms)
+                animation-delay: calc(var(--i) * -400ms)
 
 @keyframes loader-loader-9
     from
@@ -585,7 +586,7 @@ $pink: #EC7474
                 background-color: #FFFFFF
                 border-radius: 50%
                 animation: bubble2-loader-2 1200ms ease-in-out infinite
-                animation-delay: calc(var(--i) * 350ms)
+                animation-delay: calc(var(--i) * -350ms)
 
 @keyframes bubble2-loader-2
     to
@@ -612,7 +613,7 @@ $pink: #EC7474
                 background-color: #FFFFFF
                 border-radius: 100%
                 animation: bubble1-loader-1 1200ms ease-in-out infinite
-                animation-delay: calc(var(--i) * 350ms)
+                animation-delay: calc(var(--i) * -350ms)
 
 @keyframes bubble1-loader-1
     to
@@ -1736,7 +1737,7 @@ $black: #160F05
                     background-color: #FFFFFF
                     box-shadow: 0 0 10px 2px #FFFFFF
                     animation: ekvalayzer 500ms ease-in-out infinite
-                    animation-delay: calc(var(--i) * 100ms)
+                    animation-delay: calc(var(--i) * -100ms)
 
 @keyframes ekvalayzer
     from
@@ -2017,7 +2018,7 @@ $black: #160F05
             background-color: #FFFFFF
             border-radius: 50%
             animation: runSnow 2000ms ease-out infinite
-            animation-delay: calc(var(--delay) * 250ms)
+            animation-delay: calc(var(--delay) * -250ms)
 
 @keyframes runSnow
     from

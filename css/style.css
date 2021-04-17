@@ -596,6 +596,8 @@
 }
 
 .parent-loader-5 .loader-loader-5 .loader-items-loader-5 {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   width: 100%;
   height: 100px;
   position: relative;
@@ -606,8 +608,8 @@
           transform: rotate(calc(var(--i) * 30deg));
   -webkit-animation: loader-loader-5 1.2s linear infinite;
           animation: loader-loader-5 1.2s linear infinite;
-  -webkit-animation-delay: calc(var(--i) * 100ms);
-          animation-delay: calc(var(--i) * 100ms);
+  -webkit-animation-delay: calc(var(--i) * -100ms);
+          animation-delay: calc(var(--i) * -100ms);
   -webkit-transform-origin: 50px 50px;
           transform-origin: 50px 50px;
 }
@@ -738,8 +740,8 @@
           transform: translate(-50%, -50%);
   -webkit-animation: loader-loader-9 1200ms linear infinite;
           animation: loader-loader-9 1200ms linear infinite;
-  -webkit-animation-delay: calc(var(--i) * 400ms);
-          animation-delay: calc(var(--i) * 400ms);
+  -webkit-animation-delay: calc(var(--i) * -400ms);
+          animation-delay: calc(var(--i) * -400ms);
 }
 
 @-webkit-keyframes loader-loader-9 {
@@ -1003,8 +1005,8 @@
   border-radius: 50%;
   -webkit-animation: bubble2-loader-2 1200ms ease-in-out infinite;
           animation: bubble2-loader-2 1200ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 350ms);
-          animation-delay: calc(var(--i) * 350ms);
+  -webkit-animation-delay: calc(var(--i) * -350ms);
+          animation-delay: calc(var(--i) * -350ms);
 }
 
 @-webkit-keyframes bubble2-loader-2 {
@@ -1068,8 +1070,8 @@
   border-radius: 100%;
   -webkit-animation: bubble1-loader-1 1200ms ease-in-out infinite;
           animation: bubble1-loader-1 1200ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 350ms);
-          animation-delay: calc(var(--i) * 350ms);
+  -webkit-animation-delay: calc(var(--i) * -350ms);
+          animation-delay: calc(var(--i) * -350ms);
 }
 
 @-webkit-keyframes bubble1-loader-1 {
@@ -3021,8 +3023,8 @@
           box-shadow: 0 0 10px 2px #FFFFFF;
   -webkit-animation: ekvalayzer 500ms ease-in-out infinite;
           animation: ekvalayzer 500ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 100ms);
-          animation-delay: calc(var(--i) * 100ms);
+  -webkit-animation-delay: calc(var(--i) * -100ms);
+          animation-delay: calc(var(--i) * -100ms);
 }
 
 @-webkit-keyframes ekvalayzer {
@@ -3495,8 +3497,8 @@
   border-radius: 50%;
   -webkit-animation: runSnow 2000ms ease-out infinite;
           animation: runSnow 2000ms ease-out infinite;
-  -webkit-animation-delay: calc(var(--delay) * 250ms);
-          animation-delay: calc(var(--delay) * 250ms);
+  -webkit-animation-delay: calc(var(--delay) * -250ms);
+          animation-delay: calc(var(--delay) * -250ms);
 }
 
 @-webkit-keyframes runSnow {
