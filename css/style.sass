@@ -81,7 +81,7 @@ $pink: #EC7474
     width: 320px
     height: 320px
     display: flex
-    flex-direction: row
+    flex-direction: column
     flex-wrap: nowrap
     justify-content: center
     align-items: center
@@ -357,175 +357,14 @@ $pink: #EC7474
 
 .parent-loader-8
     background-color: #18212A
-    .loader-loader-8
-        width: 100px
-        .loader-parent-loader-8
-            width: 100%
-            height: 100px
-            position: relative
-            .circle-loader-8
-                width: 80px
-                height: 80px
-                border-radius: 50%
-                position: absolute
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
-                border: 10px solid #FFFFFF50
-                border-top: 10px solid #FFFFFF
-                animation: loader-loader-8 800ms linear infinite
-
-@keyframes loader-loader-8
-    to
-        transform: translate(-50%, -50%) rotate(360deg)
-    from
-        transform: translate(-50%, -50%) rotate(0deg)
-
 .parent-loader-5
     background-color: #B12C2C
-    .loader-loader-5
-        width: 100px
-        .loader-items-loader-5
-            transform: rotateY(180deg)
-            width: 100%
-            height: 100px
-            position: relative
-            .item-loader-5
-                transform: rotate(calc(var(--i) * 30deg))
-                animation: loader-loader-5 1.2s linear infinite
-                animation-delay: calc(var(--i) * -100ms)
-                transform-origin: 50px 50px
-                &::after
-                    content: ""
-                    display: block
-                    position: absolute
-                    top: 3px
-                    left: 47px
-                    width: 7px
-                    height: 21px
-                    background-color: #FFFFFF
-                    border-radius: 20%
-                    box-shadow: -1px 1px 2px 1px rgba(0,0,0, 0.2)
-
-@keyframes loader-loader-5
-    to
-        opacity: 0
-    from
-        opacity: 1
-
 .parent-loader-6
     background-color: #2CB161
-    .loader-loader-6
-        width: 100px
-        .loader-title-loader-6
-            width: 100%
-            text-align: center
-            font-size: 20px
-            color: #FFFFFF
-            font-weight: 700
-            line-height: 1.7
-        .loader-items-loader-6
-            width: 100%
-            height: 100px
-            position: relative
-            .item-loader-6
-                transform: rotate(calc(var(--i) * 45deg))
-                transform-origin: 50px 50px
-                &::after
-                    content: ""
-                    display: block
-                    position: absolute
-                    top: 25px
-                    left: 25px
-                    width: 10px
-                    height: 10px
-                    border-radius: 50%
-                    background-color: #FFFFFF
-                    animation: loader-loader-6 800ms linear infinite
-                    animation-delay: calc(var(--i) * 100ms)
-
-@keyframes loader-loader-6
-    to
-        transform: scale(1,1)
-    from
-        transform: scale(1.5,1.5)
-
 .parent-loader-9
     background-color: #0B5798
-    .loader-loader-9
-        width: 100px
-        .loader-items-loader-9
-            width: 100%
-            height: 100px
-            position: relative
-            .bubble-loader-9
-                width: 0
-                height: 0
-                position: absolute
-                top: 50%
-                left: 50%
-                background-color: #FFFFFF
-                border-radius: 50%
-                transform: translate(-50%, -50%)
-                animation: loader-loader-9 1200ms linear infinite
-                animation-delay: calc(var(--i) * -400ms)
-
-@keyframes loader-loader-9
-    from
-        width: 15px
-        height: 15px
-        opacity: 1
-    to
-        width: 80px
-        height: 80px
-        opacity: 0
-
 .parent-loader-4
     background-color: #202c39
-    .loader-loader-4
-        width: 100px
-        .loader-items-loader-4
-            width: 100%
-            height: 100px
-            perspective: 100px
-            .parent-cub-loader-4
-                width: 100px
-                height: 100px
-                position: relative
-                transform-style: preserve-3d
-                transform-origin: 50% 50% -50px
-                .cub-loader-4
-                    width: 50px
-                    height: 50px
-                    top: 50%
-                    left: 50%
-                    transform: translate(-50%, -50%)
-                    position: absolute
-                    background-color: #FFFFFF
-                    &.cub-loader-4.cub-1-loader-4
-                        animation: loader-1-loader-4 500ms ease infinite
-                    &.cub-loader-4.cub-2-loader-4
-                        animation: loader-2-loader-4 500ms ease infinite
-                    &.cub-loader-4.cub-3-loader-4
-                        animation: loader-3-loader-4 500ms ease infinite
-                        
-@keyframes loader-1-loader-4
-    to
-        transform: translate(-50%, -50%) rotateX(0deg)
-    from
-        transform: translate(-50%, -50%) rotateX(180deg)
-
-@keyframes loader-2-loader-4
-    to
-        transform: translate(-50%, -50%) rotateY(0deg)
-    from
-        transform: translate(-50%, -50%) rotateY(180deg)
-
-@keyframes loader-3-loader-4
-    to 
-        transform: translate(-50%, -50%) rotateZ(0deg)
-    from
-        transform: translate(-50%, -50%) rotateZ(180deg)
 
 .parent-loader-10
     background-color: #202C39
@@ -571,134 +410,12 @@ $pink: #EC7474
 
 .parent-loader-2
     background-color: #63E06A
-    .loader-loader-2
-        width: 150px
-        .loader-items-loader-2
-            width: 100%
-            height: 40px
-            display: flex
-            flex-wrap: nowrap
-            justify-content: space-between
-            align-items: center
-            .bubble-loader-2
-                width: 30px
-                height: 30px
-                background-color: #FFFFFF
-                border-radius: 50%
-                animation: bubble2-loader-2 1200ms ease-in-out infinite
-                animation-delay: calc(var(--i) * -350ms)
-
-@keyframes bubble2-loader-2
-    to
-        transform: translateY(0)
-    50%
-        transform: translateY(-30px)
-    from
-        transform: translateY(0)
-
 .parent-loader-1
     background-color: #e06363
-    .loader-loader-1
-        width: 150px
-        height: 40px
-        .loader-items-loader-1
-            width: 100%
-            display: flex
-            flex-wrap: nowrap
-            justify-content: space-between
-            align-items: center
-            .bubble-loader-1
-                width: 30px
-                height: 30px
-                background-color: #FFFFFF
-                border-radius: 100%
-                animation: bubble1-loader-1 1200ms ease-in-out infinite
-                animation-delay: calc(var(--i) * -350ms)
-
-@keyframes bubble1-loader-1
-    to
-        transform: scale(1,1)
-    50%
-        transform: scale(0.3,0.3)
-    from
-        transform: scale(1,1)
-
 .parent-heart
     background-color: #B12C2C
-    .loader-heart
-        width: 100px
-        .loader-items-heart
-            width: 100%
-            height: 100px
-            position: relative
-            .heart
-                width: 40px
-                height: 40px
-                border-radius: 50%
-                position: absolute
-                left: 50%
-                top: 50%
-                transform: translate(-85%, -75%)
-                background-color: #FFFFFF
-                animation: loader-heart 1000ms linear infinite
-                &::after
-                    content: ""
-                    width: 100%
-                    height: 100%
-                    border-radius: 50%
-                    position: absolute
-                    left: 30px
-                    top: 0
-                    background-color: #FFFFFF
-                &::before
-                    content: ""
-                    width: 100%
-                    height: 100%
-                    transform: rotate(45deg)
-                    position: absolute
-                    left: 15px
-                    top: 15px
-                    background-color: #FFFFFF
-
-@keyframes loader-heart
-    to
-        transform: translate(-60%, -60%) scale(.5)
-    30%
-        transform: translate(-80%, -70%) scale(.8)
-    60%
-        transform: translate(-60%, -60%) scale(.5)
-    80%
-        transform: translate(-80%, -70%) scale(.8)
-    from
-        transform: translate(-85%, -75%) scale(1)
-
 .parent-loader-3
     background-color: #0B5798
-    .loader-loader-3
-        width: 100px
-        .loader-items-loader-3
-            width: 100%
-            height: 70px
-            display: flex
-            flex-direction: row
-            flex-wrap: nowrap
-            justify-content: space-between
-            align-items: center
-            .rectangular-loader-3
-                width: 10px
-                height: 25px
-                background-color: #FFFFFF
-                border-radius: 5px
-                animation: loader-loader-3 600ms ease-in-out infinite
-                animation-delay: calc(var(--i) * 650ms)
-
-@keyframes loader-loader-3
-    to
-        height: 30px
-    50%
-        height: 60px
-    from
-        height: 30px
 
 .parent-pac-man
     background-color: #202C39
@@ -1716,76 +1433,9 @@ $black: #160F05
             &:focus
                 outline: none
 
-.parent-ekvalayzer-loader
-    background-color: #202c39
-    .ekvalayzer-loader
-        width: 150px
-        .ekvalayzer-loader-items
-            width: 100%
-            height: 100px
-            display: flex
-            justify-content: center
-            align-items: flex-end
-            flex-direction: row
-            flex-wrap: nowrap
-            .ekvalayzer-parent-rectangular
-                padding: 3px
-                width: min-content
-                height: min-content
-                .ekvalayzer-rectangular
-                    width: 10px
-                    background-color: #FFFFFF
-                    box-shadow: 0 0 10px 2px #FFFFFF
-                    animation: ekvalayzer 500ms ease-in-out infinite
-                    animation-delay: calc(var(--i) * -100ms)
-
-@keyframes ekvalayzer
-    from
-        height: calc(var(--w) * 20px)
-    50%
-        height: 80px
-    to
-        height: calc(var(--w) * 20px)
-
+.parent-ekvalayzer-loader,
 .parent-loader-11
     background-color: #202c39
-    .loader-loader-11
-        width: 100px
-        .loader-items-loader-11
-            width: 100%
-            height: 100px
-            position: relative
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: row
-            flex-wrap: nowrap
-            .item
-                display: flex
-                justify-content: space-between
-                align-items: center
-                flex-direction: row
-                flex-wrap: nowrap
-                width: 70px
-                animation: loader-loader-11 1.5s ease-in infinite
-                .bubble-loader-11
-                    width: 14px;
-                    height: 14px;
-                    border-radius: 50%;
-                    background-color: #FFFFFF
-
-@keyframes loader-loader-11
-    from
-        transform: rotate(0)
-    45%
-        transform: rotate(400deg)
-    50%
-        transform: rotate(360deg)
-    95%
-        transform: rotate(-40deg)
-    to 
-        transform: rotate(0)
-
 
 .w-100
     width: 100%
@@ -2124,35 +1774,3 @@ $black: #160F05
 
 .parent-loader-13
     background-color: $green
-    .loader-loader-13
-        width: 100px
-        .loader-title
-        .loader-items-loader-13
-            width: 100%
-            height: 100px
-            display: flex
-            justify-content: center
-            align-items: center
-            flex-direction: row
-            flex-wrap: nowrap
-            .loader-items-loader-13-item
-                width: 100%
-                height: 5px
-                position: relative
-                background-color: #FFFFFF50
-                overflow: hidden
-                &::before,
-                &:before
-                    content: ''
-                    width: 10px
-                    height: 100%
-                    position: absolute
-                    top: 0
-                    background-color: #FFFFFF
-                    animation: loader-loader-13 800ms ease-in infinite
-
-@keyframes loader-loader-13
-    from
-        left: -10px
-    to 
-        left: calc(100% + 10px)
