@@ -60,6 +60,10 @@
   background-color: #EC7474;
 }
 
+.main .bg-yellow {
+  background-color: #FFAA00;
+}
+
 .show-code {
   width: 100%;
   height: 400px;
@@ -2905,5 +2909,9 @@
 
 .parent-loader-14 {
   background-color: #157881;
+}
+
+.parent-loader-15 {
+  background-color: #FFAA00;
 }
 /*# sourceMappingURL=style.css.map */
